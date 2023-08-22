@@ -3,15 +3,20 @@
 
 <body>
     {% include 'header/partials/header.html' %}
+    {% include 'header/partials/search.html' %}
 
-    <div class="search-container">
-        <div class="container">
-            <form action="" class="search-form">
-                <input type="search" class="search-input" name="search">
-                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-            </form>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include 'header/partials/card.html' %}
+            {% include 'header/partials/card.html' %}
+            {% include 'header/partials/card.html' %}
+            {% include 'header/partials/card.html' %}
+            {% include 'header/partials/card.html' %}
+            {% include 'header/partials/card.html' %}
         </div>
-    </div>
+    </main>
+
+    {% include 'header/partials/footer.html' %}
 </body>
 
 </html>
